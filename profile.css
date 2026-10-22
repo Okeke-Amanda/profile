@@ -237,6 +237,8 @@ body{
       margin-bottom: 20px;
       outline: none;
       border: none;
+          left: 0;
+          padding-left: 20px;
 }
 a:hover::after{
           content: none;
@@ -260,7 +262,7 @@ a:hover{
           }
           .table{
                 width: fit-content;
-                margin: 20px 15px;
+                margin: 20px 12px;
           }
          nav{
                 align-items: center;
@@ -301,6 +303,8 @@ a:hover{
       text-align: start;
       width: 100%;
       padding-top: 140px;
+          left: 0;
+          padding-left: 15px;
 }
 a:hover::after{
           content: none;
