@@ -1,0 +1,314 @@
+*{
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+}
+nav{
+          background-color: white;
+          margin-left: 5px;
+          border-bottom: 1px solid #eee;
+}
+.nav-link{
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+}
+header{
+      position: fixed;
+      width: 100%;
+      margin-top: 0;
+      top: 0;
+}
+#menu{
+      display: none;
+      position: fixed;
+      border: none;
+      cursor: pointer;
+}
+.link{
+          display: flex;
+          gap: 30px;
+          margin-right: 80px;
+}
+.profile{
+          margin-left: 80px;
+}
+a{
+          text-decoration: none;
+          color: black;
+          cursor: pointer;
+}
+a i {
+          color: blue;
+          font-size: larger;
+}
+i{
+          color: blue;
+}
+.table p i{
+          color: blue;
+          margin-right: 10px;
+          
+}
+h2 i{
+          color: blue;
+          margin-left: 10px;
+}
+a:hover::after{
+          content: "" ;
+         bottom: -20px; 
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          background-color: blue;
+          left: 0;
+          border-radius: 4px;
+}
+a:hover{
+          color: blue;
+          position: relative;
+}
+.picture{
+          display: flex;
+          align-items: center;
+          gap: 90px;
+          margin: 30px 100px;
+}
+.label{
+          color: #555454;
+}
+.occupation{
+          color: blue;
+          background-color: rgb(204, 204, 241);
+          padding: 5px 8px;
+          border-radius: 13px;
+          width: max-content;
+}
+h4{
+          color: black;
+          font-size: larger;
+          padding: 10px;
+}
+body{
+          background-color: white;
+          font-family:"Nunito", sans-serif ;
+}                                     
+ img{
+          border-radius: 50%;
+          max-width: 100%;
+          height: auto;
+ }                                    
+ p, h2{
+          color: black;
+          margin-top: 10px;
+ }         
+ span{
+          color: blue;
+ }
+ .table{
+          border: 1px solid #eee;
+          margin: 0 100px;
+          padding-right: 15px;
+ }   
+ .row{
+         display: grid;
+         grid-template-columns: 250px 1fr;
+          border-top: 1px solid #eee;
+          padding: 10px 15px;
+          margin: 0 15px;
+ }     
+ .table h2{
+          padding: 10px 15px;
+}           
+.container{
+      padding-top: 100px;
+}
+#xbar{
+      display: none;
+}
+
+@media(max-width: 747px){
+          .picture{
+                width: fit-content;
+                margin: 20px 60px;
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+          }
+          .table{
+                width: fit-content;
+                margin: 20px 60px;
+          }
+          .container{
+            padding-top: 120px;
+          }
+          .row{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+          }
+          nav{
+                align-items: center;
+                width: 100%;
+                padding: 8px 5px;
+                justify-content: space-between;
+                position: fixed;
+          }
+        .link{
+          display: flex;
+          gap: 20px;
+          margin-right: 80px;
+}
+          .profile{
+                margin-left: 20px;
+          }
+          body{
+                width: 100%;
+          }
+          .nav-link{
+                justify-content: space-between;
+          }
+          img{
+                margin-left: 20px;
+                align-items: start;
+          }
+          header{
+      position: fixed;
+      width: 100%;
+      margin-top: 0;
+}
+#xbar{
+      display: none;
+}
+
+}                      
+@media(max-width: 550px){
+          nav{
+                align-items: center;
+                width: 100%;
+                padding: 10px 5px;
+                justify-content: space-between;
+          }
+            .picture{
+                width: fit-content;
+                margin: 20px 30px;
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+          }
+          .table{
+                width: fit-content;
+                margin: 20px 30px;
+          }
+          .profile{
+                margin-left: 15px;
+          }
+          #menu{
+            display: block;
+            position: fixed;
+            right: 20px;
+            top: 25px;
+            z-index: 10;
+          }
+          header{
+      position: fixed;
+      width: 100%;
+      margin-top: 0;
+}
+.link{
+        display: none;
+          flex-direction: column;
+          padding: 15px 0;
+          position: absolute;
+}    
+.link:hover{
+      color: blue;
+      background-color: white;
+      cursor: pointer;
+}
+.link.active{
+      display: flex;
+      background-color: white;
+      color: black;
+      text-align: start;
+      width: 100%;
+      padding-top: 140px;
+      margin-bottom: 20px;
+      outline: none;
+      border: none;
+}
+a:hover::after{
+          content: none;
+}
+a:hover{
+          text-decoration: none;
+}
+#xbar{
+      display: none;
+}
+}
+
+    
+@media(max-width: 393px){
+        .picture{
+                width: fit-content;
+                margin: 20px 15px;
+                display: flex;
+                gap: 20px;
+                flex-direction: column;
+          }
+          .table{
+                width: fit-content;
+                margin: 20px 15px;
+          }
+         nav{
+                align-items: center;
+                width: 100%;
+                padding: 10px 4px;
+                justify-content: space-between;
+          }
+         .profile{
+                margin-left: 5px;
+          }
+           #menu{
+            display: block;
+            position: fixed;
+            right: 20px;
+            z-index: 10;
+           }
+          header{
+      position: fixed;
+      width: 100%;
+      margin-top: 0;
+          }
+      .link{
+        display: none;
+          flex-direction: column;
+          padding: 15px 0;
+          color: blue;
+          position: absolute;
+}    
+.link:hover{
+      color: blue;
+      background-color: white;
+      cursor: pointer;
+}
+.link.active{
+      display: flex;
+      background-color: white;
+      color: black;
+      text-align: start;
+      width: 100%;
+      padding-top: 140px;
+}
+a:hover::after{
+          content: none;
+}
+a:hover{
+          text-decoration: none;
+}
+#xbar{
+      display: none;
+}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
